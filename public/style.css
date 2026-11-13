@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eaf3ff; color: #1f3a5f; font: 16px Arial, sans-serif; }
+.container { max-width: 700px; margin: 40px auto; padding: 28px; background: white; border: 1px solid #bfd7f2; border-radius: 8px; }
+h1 { margin: 0 0 24px; color: #244b7a; }
+form { display: grid; gap: 10px; }
+input, button { min-height: 42px; padding: 9px 12px; font: inherit; }
+input { width: 100%; border: 1px solid #8eb6e2; border-radius: 4px; color: #1f3a5f; }
+button { border: 0px solid #8eb6e2; border-radius: 4px; background: #a9cbf5; color: #1f3a5f; cursor: pointer; font-weight: bold; }
+button:hover { background: #cfe3ff; }
+button:focus-visible { outline: 3px solid #f1a9c5; outline-offset: 2px; }
+button:disabled { cursor: wait; opacity: 0.6; }
+.form-actions { display: flex; gap: 8px; }
+.btn-batal, .btn-hapus { background: #fad1e0; border-color: #e8a9c1; }
+#pesan { min-height: 24px; margin: 18px 0 10px; font-weight: bold; }
+.tabel-wrap { overflow-x: auto; }
+.tabel { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 8px; border-bottom: 1px solid #bfd7f2; text-align: left; overflow-wrap: anywhere; }
+th { background: #cfe3ff; }
+td:last-child { white-space: nowrap; }
+td button { min-height: 36px; margin: 2px 4px 2px 0; padding: 6px 10px; }
+
+@media (max-width: 560px) {
+  .container { margin: 16px 10px; padding: 20px 16px; }
+  h1 { font-size: 24px; }
+  .form-actions { flex-direction: column; }
+  td button { display: block; width: 100%; margin-right: 0; }
+}
